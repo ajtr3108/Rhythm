@@ -1,0 +1,63 @@
+$principal-color: #ba113c;
+
+$colores-otros: white, #800000, #9b2e3d;
+@use 'sass:list';
+
+main {
+    .menu {
+        nav {
+            text-align: center;
+            flex-wrap: wrap;
+
+            .opciones {
+                border: 1px;
+                border-style: solid;
+                border-color: $principal-color;
+                margin: 20px 20px;
+                transition: 1s;
+                &:hover{
+                    scale: 1.1;
+                    box-shadow: 28px 30px 55px -1px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 28px 30px 55px -1px rgba(0,0,0,0.75);
+            -moz-box-shadow: 28px 30px 55px -1px rgba(0,0,0,0.75);
+                };
+
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+
+                ;
+
+                a {
+                    color: list.nth($list: $colores-otros, $n:1 );
+                    text-decoration: none;
+                    list-style: none;
+                    display: block;
+                    background-color: $principal-color;
+                    transition: 1s ease;
+
+                    &:hover {
+                        background-color: list.nth($list: $colores-otros, $n: 2);
+                    }
+
+                    &:active {
+                        background-color: list.nth($list: $colores-otros , $n: 3);
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.nav-link {
+    color: list.nth($list: $colores-otros , $n: 1);
+    text-decoration: none;
+    transition: 1s ease;
+
+    &:hover {
+        color: list.nth($list: $colores-otros , $n: 1);
+        background-color: list.nth($list: $colores-otros, $n: 2);
+    }
+}

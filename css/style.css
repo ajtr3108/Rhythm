@@ -9,11 +9,11 @@ body{
     font-family: "Poppins", serif;
 }
 
-header {
+header{
     background-color: #ba113c;
 }
 
-h1 {
+header h1{
     color:white;
     text-align: center;
 }
@@ -21,48 +21,6 @@ h1 {
 h2{
     text-align: center;
     font-weight: 800;
-}
-
-header nav ul li a{
-    color: white;
-    text-align: center;
-    text-decoration: none;
-}
-
-header nav ul li a:hover{
-    color: white;
-}
-
-navbar{
-    background-color: #ba113c; 
-}
-
-.navbar-brand{
-    color: white;
-}
-
-.navbar-brand:hover{
-color: white;
-}
-
-ul{list-style: none;}
-
-.btn-outline{
-    border-color: white;
-    color: white;
-}
-
-.btn-outline:hover{
-    border-color: #800000;
-    background-color: #800000;
-    color: white;
-}
-
-footer img{
-    position: fixed;
-    bottom: 0;
-    width: 50px;
-    height: 50px;
 }
 
 .hero{
@@ -76,7 +34,8 @@ footer img{
     background-size: cover;
 }
 
-.menu nav ul li a{
+
+.menu nav a{
 color: white;
 text-decoration: none;
 list-style: none;
@@ -88,12 +47,6 @@ list-style: none;
 }
 
 p{margin-top: 20px;}
- 
-nav ul li a{
-    color: black;
-text-decoration: none;
-list-style: none;
-}
 
 .opciones{
     border: 1px #ba113c;
@@ -101,7 +54,7 @@ list-style: none;
     margin: 20px 20px;
 }
 
-.menu nav ul{
+.menu nav{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -110,16 +63,26 @@ list-style: none;
     flex-wrap: wrap;
 }
 
-.opciones li a{
+.opciones a{
 display: block;
 background-color: #ba113c;
 }
 
-.opciones li a:hover{
-    background-color: #800000 ;
+.opciones a:hover{
+    background-color: #800000;
 }
 
-.opciones li a:active{
+.opciones a:active{
+    background-color: #9b2e3d;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: white;
     background-color: #9b2e3d;
 }
 
@@ -173,36 +136,70 @@ h3{
 }
 
 .oned{
-    text-align: center;
-    color: white;
-    width: 100%;
-    height: 300px;
-    background-image: url(../img/1dbanner.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
 }
 
-.bruno{
-    text-align: center;
-    color: white;
-    width: 100%;
-    height: 300px;
-    background-image: url(../img/brunobanner.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.oned img{
+    width: 25%;
+    border-radius: 50%;
 }
 
-.spears{
-    text-align: center;
+.oned-opciones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.oned-opciones img{
+width: 80%;
+border-radius: 50%;
+border: #ba113c solid 1px;
+}
+
+.blockquote-footer{
+    background-color: white;
+}
+
+.card-header{
+    background-color: #ba113c;
     color: white;
-    width: 100%;
-    height: 300px;
-    background-image: url(../img/spearsbanner.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+}
+
+.card{
+    width: 50%;
+
+}
+
+.citas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.citas img{
+width: 30%;
+border-radius: 2%;
+}
+
+.list-group{
+    width: 30%;
+}
+
+.playlists{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+}
+
+.playlists img{
+    width: 13%;
+margin-right: 2%;
 }
 
 footer{
@@ -216,10 +213,52 @@ grid-auto-rows: 200px;
 }
 }
 
+@media screen and (max-width:915px){
+    .citas{
+        flex-direction: column;
+        align-items: center;
+    }
+    .citas img{
+        margin-top: 2%;
+        width: 50%;
+    }
+    .playlists{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 @media screen and (max-width:659px){
 .carta img{
 display: none;
 }
+}
+
+@media screen and (max-width:588px){
+    .card{
+        display: none;
+    }
+}
+
+@media screen and (max-width:548px){
+    .oned-opciones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-left: 30%;
+    }
+    .oned-opciones img{
+        width: 50%;
+        margin: 2%;
+        }
+}
+
+@media screen and (max-width:555px){
+    .oned img{
+    width: 35%;
+    }
 }
 
 @media screen and (max-width:515px){
@@ -227,5 +266,4 @@ display: none;
     grid-template-columns: 1fr;
     grid-auto-rows: 200px;
     }
-    }
-
+}

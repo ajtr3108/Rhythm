@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", serif;
+}
+
+header {
+  background-color: #ba113c;
+}
+
+header h1 {
+  color: white;
+  text-align: center;
+  font-weight: 800;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 800;
+}
+
+p {
+  margin-top: 20px;
+}
+
+h3 {
+  margin: 20px;
+}
+
+footer {
+  background-color: #ba113c;
+}
+
+main .menu nav {
+  text-align: center;
+  flex-wrap: wrap;
+}
+main .menu nav .opciones {
+  border: 1px;
+  border-style: solid;
+  border-color: #ba113c;
+  margin: 20px 20px;
+  transition: 1s;
+}
+main .menu nav .opciones:hover {
+  scale: 1.1;
+  box-shadow: 28px 30px 55px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 28px 30px 55px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 28px 30px 55px -1px rgba(0, 0, 0, 0.75);
+}
+main .menu nav .opciones img {
+  width: 200px;
+  height: 200px;
+}
+main .menu nav .opciones a {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  display: block;
+  background-color: #ba113c;
+  transition: 1s ease;
+}
+main .menu nav .opciones a:hover {
+  background-color: #800000;
+}
+main .menu nav .opciones a:active {
+  background-color: #9b2e3d;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  transition: 1s ease;
+}
+.nav-link:hover {
+  color: white;
+  background-color: #800000;
+}
+
+main .hero {
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 300px;
+  background-image: url(../img/heroseccion.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.galeria-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 200px;
+  gap: 15px;
+}
+.galeria-grid .img-grid img {
+  width: 100%;
+  height: 100%;
+}
+
+.taylor {
+  flex-wrap: wrap;
+}
+.taylor .carta img {
+  width: 200px;
+  height: 200px;
+}
+.taylor .carta h3 {
+  margin: 20px;
+}
+
+.oned div {
+  background-image: url(../img/oned-img1.jpg);
+  width: 360px;
+  height: 360px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: ease-out 0.2s;
+}
+.oned div:hover {
+  animation: transformacion 5s;
+}
+
+@keyframes transformacion {
+  0% {
+    border-radius: 0%;
+    imga: url(../img/oned-img1.jpg);
+  }
+  25% {
+    border-radius: 50% 0% 0% 0%;
+    background-image: url(../img/oned-img2.jpg);
+  }
+  50% {
+    border-radius: 50% 50% 0% 0%;
+    background-image: url(../img/oned-img3.jpg);
+  }
+  75% {
+    border-radius: 50% 50% 50% 0%;
+    background-image: url(../img/oned-img4.jpg);
+  }
+  100% {
+    border-radius: 50% 50% 50% 50%;
+    background-image: url(../img/oned-img5.jpg);
+  }
+}
+section .oned-opciones a img {
+  width: 70%;
+  border-radius: 50%;
+  border: #ba113c solid 1px;
+  transition: 1s;
+}
+section .oned-opciones a img:hover {
+  scale: 1.1;
+  box-shadow: 28px 30px 55px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 28px 30px 55px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 28px 30px 55px -1px rgba(0, 0, 0, 0.75);
+}
+
+.citas img {
+  width: 30%;
+  border-radius: 2%;
+}
+
+.blockquote-footer {
+  background-color: white;
+}
+
+.card {
+  width: 50%;
+}
+
+.card-header {
+  background-color: #ba113c;
+  color: white;
+}
+
+.playlists {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.playlists img {
+  width: 13%;
+}
+
+.list-group {
+  width: 30%;
+}
+
+.lana-taylor, .ed-taylor, .gracie-taylor {
+  grid-row: span 2;
+}
+
+.menu nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: #800000 solid 1px;
+  height: 202px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 100%;
+  box-shadow: 56px 33px 63px -13px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 56px 33px 63px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 56px 33px 63px -13px rgba(0, 0, 0, 0.75);
+}
+
+.oned {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: none;
+}
+
+.oned-opciones {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.citas {
+  display: flex;
+  flex-direction: row;
+  align-items: none;
+  justify-content: space-around;
+}
+
+.playlists {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 945px) {
+  .galeria-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 200px;
+  }
+}
+@media screen and (max-width: 915px) {
+  .citas {
+    flex-direction: column;
+    align-items: center;
+  }
+  .citas img {
+    margin-top: 2%;
+    width: 50%;
+  }
+  .playlists {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 588px) {
+  .card {
+    display: none;
+  }
+}
+@media screen and (max-width: 548px) {
+  .oned-opciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  section .oned-opciones a img {
+    width: 35%;
+    margin: 2% 30%;
+  }
+}
+@media screen and (max-width: 528px) {
+  .carta p {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .oned div {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 515px) {
+  .galeria-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 200px;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

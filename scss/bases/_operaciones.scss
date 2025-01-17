@@ -1,0 +1,61 @@
+$principal-color: rgb(186, 17, 59);
+
+$colores-otros: white, #800000, #9b2e3d;
+@use 'sass:list';
+
+%spans {
+    grid-row: span 2;
+}
+
+.gracie-taylor {
+    @extend %spans;
+}
+
+.ed-taylor {
+    @extend %spans;
+}
+
+.lana-taylor {
+    @extend %spans;
+}
+
+@mixin flex ($flex, $row, $aling, $justify) {
+    display: $flex;
+    flex-direction: $row;
+    align-items: $aling;
+    justify-content: $justify;
+}
+
+.menu{
+    nav{
+        @include flex(flex, row, center, space-between)
+    }
+}
+
+.carta {
+    @include flex (flex, row, center, space-between);
+    border: list.nth($list: $colores-otros, $n: 2) solid 1px;
+    height: 202px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 100%;
+    box-shadow: 56px 33px 63px -13px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 56px 33px 63px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 56px 33px 63px -13px rgba(0,0,0,0.75);
+}
+
+.oned {
+    @include flex (flex, column-reverse, center, none)
+}
+
+.oned-opciones {
+    @include flex (flex, row, center, space-between);
+}
+
+.citas {
+    @include flex (flex, row, none, space-around)
+}
+
+.playlists {
+    @include flex (flex, row, center, center)
+}

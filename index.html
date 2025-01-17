@@ -6,98 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Document</title>
 </head>
 
 <body>
     <header>
         <h1>Rhythm</h1>
-        <nav class="navbar">
-            <div class="container-fluid">
-                <a class="navbar-brand">Inicio</a>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline" type="submit">Search</button>
-                </form>
-            </div>
+        <nav>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+            </ul>
         </nav>
     </header>
-    <section class="hero">
-        <h2>Bienvenido a Rhythm</h2>
-        <p>Un lugar donde puedes explorar y expandir tus gustos musicales con nuestras amplias sugerencias y categorias
-            diversas</p>
-    </section>
     <main>
-        <h2>Artistas</h2>
+        <section class="hero">
+            <h2 class="animate__animated animate__bounceInLeft">Bienvenido a Rhythm</h2> 
+            <p>Un lugar donde puedes explorar y expandir tus gustos musicales con nuestras amplias sugerencias y
+                categorias
+                diversas</p>
+        </section>
+        <h2 class="animate__animated animate__bounceInLeft">Artistas</h2>
         <section class="menu">
             <nav>
-                <ul>
-                    <div class="opciones">
-                        <img src="./img/tayloricon.jpg" alt="">
-                        <li><a href="./pages/taylorswift.html">Taylor Swift</a></li>
-                    </div>
+                <div class="opciones">
+                    <img src="./img/tayloricon.jpg" alt="">
+                    <a href="./pages/taylorswift.html">Taylor Swift</a>
+                </div>
 
-                    <div class="opciones">
-                        <img src="./img/1dicon.jpg" alt="">
-                        <li><a href="./pages/1direction.html">One Direction</a></li>
-                    </div>
+                <div class="opciones">
+                    <img src="./img/1dicon.jpg" alt="">
+                    <a href="./pages/1direction.html">One Direction</a>
+                </div>
 
-                    <div class="opciones">
-                        <img src="./img/brunoicon.jpg" alt="">
-                        <li><a href="./pages/brunomars.html">Bruno Mars</a></li>
-                    </div>
+                <div class="opciones">
+                    <img src="./img/brunoicon.jpg" alt="">
+                    <a href="./pages/brunomars.html">Bruno Mars</a>
+                </div>
 
-                    <div class="opciones">
-                        <img src="./img/spearsicon.jpg" alt="">
-                        <li><a href="./pages/britneyspears.html">Britney Spears</a></li>
-                    </div>
-                </ul>
+                <div class="opciones">
+                    <img src="./img/spearsicon.jpg" alt="">
+                    <a href="./pages/britneyspears.html">Britney Spears</a>
+                </div>
             </nav>
         </section>
+        <section class="galeria-grid">
+
+            <div class="img-grid">
+                <img src="./img/casette1.jpg" alt="">
+            </div>
+
+            <div class="img-grid">
+                <img src="./img/casette2.jpg" alt="">
+            </div>
+
+            <div class="img-grid">
+                <img src="./img/casette3.jpg" alt="">
+            </div>
+
+            <div class="img-grid">
+                <img src="./img/casette4.jpg" alt="">
+            </div>
+
+            <div class="img-grid">
+                <img src="./img/casette5.jpg" alt="">
+            </div>
+
+            <div class="img-grid">
+                <img src="./img/casette6.jpg" alt="">
+            </div>
+
+            <div class="img-grid">
+                <img src="./img/casette7.jpg" alt="">
+            </div>
+
+            <div class="img-grid">
+                <img src="./img/casette8.jpg" alt="">
+            </div>
+
+            <div class="img-grid">
+                <img src="./img/casette9.jpg" alt="">
+            </div>
+        </section>
+        <footer>
+            <p>©Rhythm</p>
+        </footer>
     </main>
-    <section class="galeria-grid">
-
-        <div class="img-grid">
-            <img src="./img/casette1.jpg" alt="">
-        </div>
-
-        <div class="img-grid">
-            <img src="./img/casette2.jpg" alt="">
-        </div>
-
-        <div class="img-grid">
-            <img src="./img/casette3.jpg" alt="">
-        </div>
-
-        <div class="img-grid">
-            <img src="./img/casette4.jpg" alt="">
-        </div>
-
-        <div class="img-grid">
-            <img src="./img/casette5.jpg" alt="">
-        </div>
-
-        <div class="img-grid">
-            <img src="./img/casette6.jpg" alt="">
-        </div>
-
-        <div class="img-grid">
-            <img src="./img/casette7.jpg" alt="">
-        </div>
-
-        <div class="img-grid">
-            <img src="./img/casette8.jpg" alt="">
-        </div>
-
-        <div class="img-grid">
-            <img src="./img/casette9.jpg" alt="">
-        </div>
-    </section>
-    <footer>
-        <p>©Rhythm</p>
-        <img src="./img/vinilologo.png" alt="">
-    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
