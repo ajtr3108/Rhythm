@@ -14,6 +14,8 @@ $colores-otros: white, #800000, #9b2e3d;
 
 body {
     font-family: "Poppins", serif;
+    width: 100% !important;
+    overflow-x: hidden !important;
 }
 
 header {
@@ -33,10 +35,6 @@ h2 {
 
 p {
     margin-top: 20px;
-}
-
-h3 {
-    margin: 20px;
 }
 
 footer {

@@ -5,7 +5,7 @@
     }
 }
 
-@media screen and (max-width:915px) {
+@media screen and (max-width:931px) {
     .citas {
         flex-direction: column;
         align-items: center;
@@ -22,12 +22,30 @@
     }
 }
 
+@media screen and (max-width:730px){
+    .carta{
+        width: 60%;
+        flex-direction: column;
+        text-align: justify;
+    }
+}
 
 @media screen and (max-width:588px) {
     .card {
         display: none;
     }
+
+    .oned{
+        flex-direction: column-reverse;
+    }
+
+    .carta{
+        width: 60%;
+        flex-direction: column;
+        text-align: justify;
+    }
 }
+
 
 @media screen and (max-width:548px) {
     .oned-opciones {
@@ -41,10 +59,15 @@
         width: 35%;
         margin: 2% 30%;
     }
+
+    .menu{
+        margin: 2% 15%;
+    }
 }
 
 @media screen and (max-width:528px) {
-    .carta p {
+    
+    .taylor .carta p {
         display: none;
     }
 }
@@ -52,7 +75,7 @@
 @media screen and (max-width:600px) {
     .oned div {
         width: 200px;
-        height: 200px;
+        padding: 100px;
     }
 }
 

@@ -6,6 +6,8 @@
 
 body {
   font-family: "Poppins", serif;
+  width: 100% !important;
+  overflow-x: hidden !important;
 }
 
 header {
@@ -25,10 +27,6 @@ h2 {
 
 p {
   margin-top: 20px;
-}
-
-h3 {
-  margin: 20px;
 }
 
 footer {
@@ -90,6 +88,15 @@ main .hero {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin: 0%;
+}
+main .hero h2 {
+  display: block;
+  padding: 2%;
+  border: solid 5px;
+  border-color: white;
+  font-weight: 1000;
+  font-size: 35px;
 }
 
 .galeria-grid {
@@ -97,28 +104,33 @@ main .hero {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: 200px;
-  gap: 15px;
+  gap: 10px;
 }
 .galeria-grid .img-grid img {
-  width: 100%;
+  width: 95%;
   height: 100%;
 }
 
 .taylor {
-  flex-wrap: wrap;
+  display: block;
 }
 .taylor .carta img {
   width: 200px;
   height: 200px;
 }
 .taylor .carta h3 {
-  margin: 20px;
+  margin-left: 5px;
+  color: #800000;
+  font-weight: 700;
 }
 
+.oned {
+  margin: 10px;
+}
 .oned div {
   background-image: url(../img/oned-img1.jpg);
   width: 360px;
-  height: 360px;
+  padding: 150px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -150,8 +162,14 @@ main .hero {
     background-image: url(../img/oned-img5.jpg);
   }
 }
+section {
+  margin: 10px;
+}
+section .oned-opciones {
+  padding: 2%;
+}
 section .oned-opciones a img {
-  width: 70%;
+  width: 90%;
   border-radius: 50%;
   border: #ba113c solid 1px;
   transition: 1s;
@@ -193,8 +211,13 @@ section .oned-opciones a img:hover {
   width: 30%;
 }
 
-.lana-taylor, .ed-taylor, .gracie-taylor {
-  grid-row: span 2;
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 0%;
+  padding: 0%;
 }
 
 .menu nav {
@@ -204,26 +227,33 @@ section .oned-opciones a img:hover {
   justify-content: space-between;
 }
 
+.taylor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .carta {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   border: #800000 solid 1px;
-  height: 202px;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  padding: 0%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 1px;
+  margin-right: 1px;
   width: 100%;
-  box-shadow: 56px 33px 63px -13px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 56px 33px 63px -13px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 56px 33px 63px -13px rgba(0, 0, 0, 0.75);
 }
 
 .oned {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: row;
   align-items: center;
-  justify-content: none;
+  justify-content: center;
 }
 
 .oned-opciones {
@@ -253,7 +283,7 @@ section .oned-opciones a img:hover {
     grid-auto-rows: 200px;
   }
 }
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 931px) {
   .citas {
     flex-direction: column;
     align-items: center;
@@ -267,9 +297,24 @@ section .oned-opciones a img:hover {
     align-items: center;
   }
 }
+@media screen and (max-width: 730px) {
+  .carta {
+    width: 60%;
+    flex-direction: column;
+    text-align: justify;
+  }
+}
 @media screen and (max-width: 588px) {
   .card {
     display: none;
+  }
+  .oned {
+    flex-direction: column-reverse;
+  }
+  .carta {
+    width: 60%;
+    flex-direction: column;
+    text-align: justify;
   }
 }
 @media screen and (max-width: 548px) {
@@ -283,16 +328,19 @@ section .oned-opciones a img:hover {
     width: 35%;
     margin: 2% 30%;
   }
+  .menu {
+    margin: 2% 15%;
+  }
 }
 @media screen and (max-width: 528px) {
-  .carta p {
+  .taylor .carta p {
     display: none;
   }
 }
 @media screen and (max-width: 600px) {
   .oned div {
     width: 200px;
-    height: 200px;
+    padding: 100px;
   }
 }
 @media screen and (max-width: 515px) {
